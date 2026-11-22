@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-ruby Component Wiki
+# SigmaOS-ruby Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-ruby provides SigmaOS component repository for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-ruby provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-ruby Abstraction
-- Fail-Fast on SigmaOS-ruby Initialization Errors
-- Deterministic SigmaOS-ruby Setup
-- Clear Abstraction Over SigmaOS-ruby APIs
-- Composition over Inheritance for SigmaOS-ruby extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-ruby Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-ruby Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-ruby Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-ruby APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-ruby extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-ruby follows a SigmaOS-ruby pattern:
+SigmaOS-ruby follows a SigmaOS-ruby pattern:
 - **SigmaOS-ruby Core**: Provides SigmaOS-ruby support, SigmaOS-ruby management, and SigmaOS-ruby tracking
 - **Management**: Supports SigmaOS-ruby management, SigmaOS-ruby configuration, and SigmaOS-ruby lifecycle
 - **Tracking**: Supports SigmaOS-ruby status, SigmaOS-ruby tracking, and SigmaOS-ruby lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-ruby follows a SigmaOS-ruby pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-ruby by given configuration
--  - Register a SigmaOS-ruby by given name
--  - Get SigmaOS-ruby status and SigmaOS-ruby availability
--  - Track SigmaOS-ruby management and SigmaOS-ruby tracking
+- Manage a SigmaOS-ruby by given configuration
+- Register a SigmaOS-ruby by given name
+- Get SigmaOS-ruby status and SigmaOS-ruby availability
+- Track SigmaOS-ruby management and SigmaOS-ruby tracking
 - Error types for SigmaOS-ruby failure scenarios or unsupported SigmaOS-ruby types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-ruby init, SigmaOS-ruby management)
 3. **Assert**: Verify the expected SigmaOS-ruby results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-ruby initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-ruby failure scenarios
 - Unit tests provided for SigmaOS-ruby management and configuration
